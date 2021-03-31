@@ -1,0 +1,19 @@
+.Mask {
+    position: absolute;
+    transition-duration: 500ms;
+    transition-delay: 25ms;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
+.Mask--hidden {
+    opacity: 0.15;
+}

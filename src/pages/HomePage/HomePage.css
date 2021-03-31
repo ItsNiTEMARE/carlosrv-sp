@@ -1,3 +1,40 @@
 .HomePage {
-    background-color: #000fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: fit-content;
+    min-height: 100vh;
+    background-color: #12232E;
+}
+
+.HomePage__intro {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #12232E;
+    z-index: 5;
+}
+
+.title {
+    width: fit-content;
+    padding: 15px 0 15px 0;
+    color: #FFFFFF;
+    font-size: 55pt;
+    font-family: 'Acme', cursive;
+}
+
+.mask-identity-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 45px;
+}
+.mask-identity-container__element {
+    position: relative;
+    margin: 0 50px 0 50px;
+    width: 192px;
+    height: 192px;
 }
