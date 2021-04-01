@@ -12,8 +12,19 @@ const HomePage = (): JSX.Element => {
         const interval = setInterval(() => {
             setShowingIntro(false);
             clearInterval(interval);
-        }, 2500);
+        }, 2750);
     }, []);
+
+    const getIntro = useCallback(() => {
+        if (showingIntro) {
+            return (
+                <div className="HomePage__intro">
+                    <img src={`${unlock}?a=${Math.random()}`} alt="Unlock" width={128} height={128} />
+                </div>
+            );
+        }
+        return <div />;
+    }, [showingIntro]);
 
     const onMaskIdentityMouseEnter = useCallback(
         (i: number) => {
@@ -39,17 +50,11 @@ const HomePage = (): JSX.Element => {
         [masksHidden]
     );
 
-    if (showingIntro) {
-        return (
-            <div className="HomePage__intro">
-                <img src={`${unlock}?a=${Math.random()}`} alt="Unlock" width={128} height={128} />
-            </div>
-        );
-    }
-
     return (
         <div className="HomePage">
+            {getIntro()}
             <h1 className="title">Carlos Rivas</h1>
+            <h2 className="subtitle">A peek into my valued social identities</h2>
             <div className="mask-identity-container">
                 <div
                     className="mask-identity-container__element"

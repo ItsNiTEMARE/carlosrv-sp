@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback } from 'react';
 import classNames from 'classnames';
 import scholar from 'assets/scholar.svg';
 import swe from 'assets/swe.svg';
@@ -11,9 +11,6 @@ type Props = {
 };
 
 const Identity = ({ type, hidden }: Props): JSX.Element => {
-    const [width] = useState(160);
-    const [height] = useState(160);
-
     const getImageSrc = useCallback(() => {
         switch (type) {
             case 'scholar':
@@ -28,13 +25,7 @@ const Identity = ({ type, hidden }: Props): JSX.Element => {
     }, [type]);
 
     return (
-        <img
-            className={classNames('Identity', { 'Identity--hidden': hidden })}
-            src={getImageSrc()}
-            width={width}
-            height={height}
-            alt="gaming"
-        />
+        <img className={classNames('Identity', { 'Identity--hidden': hidden })} src={getImageSrc()} alt="identity" />
     );
 };
 

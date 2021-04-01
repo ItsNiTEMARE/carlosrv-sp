@@ -1,7 +1,8 @@
 .Mask {
     position: absolute;
-    transition-duration: 500ms;
-    transition-delay: 25ms;
+    transition: opacity 500ms ease 25ms;
+    width: 11rem;
+    aspect-ratio: 1;
     margin-left: auto;
     margin-right: auto;
     left: 0;
