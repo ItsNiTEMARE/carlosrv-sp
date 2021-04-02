@@ -10,13 +10,25 @@
 .HomePage__intro {
     position: absolute;
     display: flex;
-    animation: fadeout 1000ms ease 1750ms;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
     background-color: #12232E;
     z-index: 5;
+}
+
+.HomePage__intro--fadeout {
+    animation: fadeout 1000ms ease 1750ms forwards;
+}
+
+.HomePage__unlock {
+    width: 128px;
+    height: 128px;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none
 }
 
 .title {
@@ -41,11 +53,16 @@
     justify-content: space-evenly;
     margin-top: 4rem;
 }
+
 .mask-identity-container__element {
     position: relative;
     margin: 0 4rem 0 4rem;
     width: 11rem;
     aspect-ratio: 1;
+}
+
+.mask-identity-container__element:focus {
+    outline: none;
 }
 
 @keyframes fadeout {
