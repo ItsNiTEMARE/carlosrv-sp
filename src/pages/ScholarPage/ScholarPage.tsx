@@ -4,17 +4,17 @@ import ExitButton from 'components/ExitButton';
 import './ScholarPage.css';
 
 const ScholarPage = (): JSX.Element => {
-    const history = useHistory();
+  const history = useHistory();
 
-    const exitPage = () => {
-        history.goBack();
-    };
+  const exitPage = () => {
+    history.goBack();
+  };
 
-    return (
-        <div className="ScholarPage">
-            <ExitButton onClick={() => exitPage()} />
-        </div>
-    );
+  return (
+    <div className="ScholarPage">
+      <ExitButton onClick={() => exitPage()} />
+    </div>
+  );
 };
 
 export default ScholarPage;
