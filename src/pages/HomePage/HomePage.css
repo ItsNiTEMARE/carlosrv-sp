@@ -7,7 +7,7 @@
   background-color: #12232e;
 }
 
-.HomePage__intro {
+.HomePage-intro {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -18,11 +18,11 @@
   z-index: 5;
 }
 
-.HomePage__intro--fadeout {
+.HomePage-intro--fadeout {
   animation: fadeout 1000ms ease 1750ms forwards;
 }
 
-.HomePage__unlock {
+.HomePage-unlock {
   width: 128px;
   height: 128px;
   -webkit-user-drag: none;
@@ -47,35 +47,11 @@
   font-family: 'Acme', cursive;
 }
 
-.mask-identity-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 4rem;
-}
-
-.mask-identity-container__element {
-  position: relative;
-  margin: 0 4rem 0 4rem;
-  width: 11rem;
-  aspect-ratio: 1;
-}
-
-.mask-identity-container__element:focus {
-  outline: none;
-}
-
 @keyframes fadeout {
   0% {
     opacity: 1;
   }
   100% {
     opacity: 0;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .mask-identity-container__element {
-    margin: 0;
   }
 }

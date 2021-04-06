@@ -1,17 +1,19 @@
-import React, { useCallback } from 'react';
+import React from 'react';
 import classNames from 'classnames';
 import scholar from 'assets/scholar.svg';
 import swe from 'assets/swe.svg';
 import gamer from 'assets/gamer.svg';
 import './Identity.css';
 
+export type IdentityType = 'scholar' | 'swe' | 'gamer';
+
 type Props = {
-  type: 'scholar' | 'swe' | 'gamer';
+  type: IdentityType;
   hidden: boolean;
 };
 
 const Identity = ({ type, hidden }: Props): JSX.Element => {
-  const getImageSrc = useCallback(() => {
+  const getImageSrc = () => {
     switch (type) {
       case 'scholar':
         return scholar;
@@ -22,7 +24,7 @@ const Identity = ({ type, hidden }: Props): JSX.Element => {
       default:
         return scholar;
     }
-  }, [type]);
+  };
 
   return <img className={classNames('Identity', { 'Identity--hidden': hidden })} src={getImageSrc()} alt="identity" />;
 };

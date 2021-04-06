@@ -16,8 +16,10 @@ const App = (): JSX.Element => {
   return (
     <main>
       <Switch>
-        <Route path="/" exact render={() => <HomePage isFirstLoad={isFirstLoad} />} />
-        <Route path="/Scholar" component={ScholarPage} />
+        <Route exact path="/">
+          <HomePage isFirstLoad={isFirstLoad} />
+        </Route>
+        <Route path="/scholar" component={ScholarPage} />
       </Switch>
     </main>
   );

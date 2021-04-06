@@ -9,7 +9,7 @@ type Props = {
 const ExitButton = ({ onClick }: Props): JSX.Element => {
   return (
     <button className="ExitButton" type="button" onClick={() => onClick()}>
-      <img className="ExitButton__img" src={exit} alt="Exit" />
+      <img className="ExitButton-img" src={exit} alt="Exit" />
     </button>
   );
 };

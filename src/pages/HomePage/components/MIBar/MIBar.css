@@ -1,0 +1,24 @@
+.MIBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 4rem;
+  background-color: red;
+}
+
+.MIBar-element {
+  position: relative;
+  margin: 0 4rem 0 4rem;
+  width: 11rem;
+  aspect-ratio: 1;
+}
+
+.MIBar-element:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .MIBar-element {
+    margin: 0;
+  }
+}
