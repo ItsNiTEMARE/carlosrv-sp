@@ -1,0 +1,45 @@
+.TimeArrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 65%;
+  height: auto;
+}
+
+.TimeArrow-padding {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.TimeArrow-line {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 2;
+  margin: 0 25px 0 25px;
+  width: clamp(3px, 0.3rem, 8px);
+  height: 8rem;
+  background-color: #d4d4d4;
+  border-radius: 2px;
+}
+
+.TimeArrow-arrowhead {
+  filter: brightness(0) saturate(100%) invert(97%) sepia(0%) saturate(919%) hue-rotate(103deg) brightness(92%) contrast(86%);
+  margin-bottom: -5px;
+  width: clamp(12px, 1.1rem, 18px);
+  aspect-ratio: 1;
+}
+
+.TimeArrow-text {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-family: sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .TimeArrow {
+    width: 90%;
+  }
+}
