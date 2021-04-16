@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import { useHistory } from 'react-router-dom';
 import unlock from 'assets/unlock.gif';
 import MIBar from './components/MIBar';
-import HoverPanel from './components/HoverPanel';
+import HoverPanel, { HoverPanelTitle, HoverPanelDescription } from './components/HoverPanel';
 import { IdentityType } from './components/Identity';
 import './HomePage.css';
 
@@ -57,8 +57,32 @@ const HomePage = ({ isFirstLoad }: Props): JSX.Element => {
       </div>
       <div className="HomePage-bottom">
         <HoverPanel
-          titles={['What are Social Identities?', 'How to Navigate?', 'About']}
-          descriptions={['Social identities are ...', 'Navigate by ...', 'This is about...']}
+          titles={[
+            <HoverPanelTitle>What are Social Identities?</HoverPanelTitle>,
+            <HoverPanelTitle>About</HoverPanelTitle>,
+            <HoverPanelTitle>Credits</HoverPanelTitle>,
+          ]}
+          descriptions={[
+            <HoverPanelDescription>
+              Social identities are a portion of a person&apos;s self concept which deals with the sense of membership
+              to particular social groups. Most of the groups which people consider themselves members of become an
+              important source of pride and self-esteem. Social identities are personally claimed, but they are usually
+              not publicly announced nor visually assignable. In some situations, social identities may change over time
+              depending on internal and external factors in the person.
+            </HoverPanelDescription>,
+            <HoverPanelDescription>
+              This web app was designed with a purpose of holding my currently valued social identities (as of April
+              2021). This app, in some sense, is a time capsule allowing me to hold a digital record of my social
+              identities. In five, ten, or many more years, I hope to be able to look back at this project and
+              re-discover my past social identities. I consider my social identities to be dynamic, so I expect them to
+              change by such long periods of time.
+            </HoverPanelDescription>,
+            <HoverPanelDescription>
+              This project was inspired by Professor Steven McCornack at UAB. This is my submission for the Honors
+              Project in his Public Speaking (CMST-101 Honors) course. Although he prefers to call his course
+              Self-Presentation Across Contexts.
+            </HoverPanelDescription>,
+          ]}
         />
       </div>
     </div>

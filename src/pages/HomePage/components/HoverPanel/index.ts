@@ -1,1 +1,1 @@
-export { default } from './HoverPanel';
+export { default, HoverPanelTitle, HoverPanelDescription } from './HoverPanel';

@@ -34,18 +34,13 @@
 
 .HoverPanel-body {
   margin-top: 1rem;
-  padding: 1rem;
+  padding: 1rem 1rem 2rem 1rem;
   align-self: center;
   width: 70%;
-  height: 15rem;
+  min-height: 15rem;
   background: var(--main-bg-color-gradient);
   border-radius: 1.5rem;
-  opacity: 0;
-  transition: opacity 750ms;
-}
-
-.HoverPanel-body--active {
-  opacity: 1;
+  transition: height 500ms;
 }
 
 .HoverPanel-description {
@@ -68,5 +63,6 @@
 
   .HoverPanel-body {
     width: 90%;
+    height: auto;
   }
 }
