@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import { useHistory } from 'react-router-dom';
 import unlock from 'assets/unlock.gif';
 import MIBar from './components/MIBar';
+import HoverPanel from './components/HoverPanel';
 import { IdentityType } from './components/Identity';
 import './HomePage.css';
 
@@ -16,6 +17,7 @@ const HomePage = ({ isFirstLoad }: Props): JSX.Element => {
   const history = useHistory();
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     if (unlockLoaded) {
       setTimeout(() => {
         setShowingIntro(false);
@@ -42,15 +44,23 @@ const HomePage = ({ isFirstLoad }: Props): JSX.Element => {
   };
 
   return (
-    <div className="HomePage">
+    <div className={classNames('HomePage', { 'HomePage--noscroll': showingIntro && isFirstLoad })}>
       {showingIntro && isFirstLoad && (
         <div className={classNames('HomePage-intro', { 'HomePage-intro--fadeout': unlockLoaded })}>
           <img className="HomePage-unlock" src={`${unlock}?a=${Math.random()}`} alt="Unlock" onLoad={onUnlockLoad} />
         </div>
       )}
-      <h1 className="title">Carlos Rivas</h1>
-      <h2 className="subtitle">A peek into my valued social identities</h2>
-      <MIBar types={['scholar', 'swe', 'gamer']} onClick={handleOnClick} />
+      <div className="HomePage-top">
+        <h1 className="HomePage-title">Carlos Rivas</h1>
+        <h2 className="HomePage-subtitle">A peek into my valued social identities</h2>
+        <MIBar types={['scholar', 'swe', 'gamer']} onClick={handleOnClick} />
+      </div>
+      <div className="HomePage-bottom">
+        <HoverPanel
+          titles={['What are Social Identities?', 'How to Navigate?', 'About']}
+          descriptions={['Social identities are ...', 'Navigate by ...', 'This is about...']}
+        />
+      </div>
     </div>
   );
 };

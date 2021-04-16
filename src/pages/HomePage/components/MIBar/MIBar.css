@@ -2,15 +2,14 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 4rem;
-  background-color: red;
+  margin: 4rem 0 4rem 0;
 }
 
 .MIBar-element {
   position: relative;
   margin: 0 4rem 0 4rem;
   width: 11rem;
-  aspect-ratio: 1;
+  height: 11rem;
 }
 
 .MIBar-element:focus {

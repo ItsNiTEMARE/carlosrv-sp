@@ -1,3 +1,11 @@
+:root {
+    --main-bg-color-dark: #001427;
+    --main-bg-color-light: #021b32;
+    --main-bg-color-gradient: linear-gradient(to right, var(--main-bg-color-dark), var(--main-bg-color-light), var(--main-bg-color-dark));
+    --main-gold-color: #ffd700;
+    --main-white-color: #f6f9fc;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +15,7 @@ html,
 body {
   min-height: 0vw;
   font-size: clamp(10px, 1.5vw, 16px);
-  background-color: #12232e;
+  background-color: var(--main-bg-color-dark);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
     'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -17,4 +25,33 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Basic animations */
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes expand {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 100%;
+  }
 }

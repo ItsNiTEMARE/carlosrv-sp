@@ -1,6 +1,10 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import gamer from 'assets/gamer.svg';
+import school from 'assets/school.svg';
+import failed from 'assets/failed.svg';
+import textbooks from 'assets/textbooks.svg';
+import highschool from 'assets/highschool.svg';
+import college from 'assets/college.svg';
 import ExitButton from 'components/ExitButton';
 import TimeSlot from './components/TimeSlot';
 import TimeArrow from './components/TimeArrow';
@@ -18,30 +22,46 @@ const ScholarPage = (): JSX.Element => {
       <ExitButton onClick={() => exitPage()} />
       <h1 className="ScholarPage-title">Scholar</h1>
       <h3 className="ScholarPage-subtitle">Honors Student</h3>
-      <TimeSlot image={gamer}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae, tenetur impedit voluptas eligendi
-        cumque quia corrupti, perspiciatis fuga deleniti ipsum error quam sit odit reiciendis nesciunt eveniet illum
-        sapiente?
+      <TimeSlot title="Kindergarden" image={school}>
+        As I begin my journy in school, I focus on being able to communicate with my classmates over my grades. This is
+        due to my limited knowledge of English coming from a Spanish-speaking household. Learning is a bit difficult
+        with the language barrier.
       </TimeSlot>
       <TimeArrow alignRight>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem fugit quisquam, doloremque accusantium
-        accusamus ullam? Repellat, consequuntur debitis, ipsum nisi sed animi aspernatur quia deserunt corporis nostrum,
-        atque nemo unde.
+        Over the months, I begin learning English quickly. I am able to communicate much better with my classmates, and
+        I am able to comprehend the material the teacher goes over. My grades are still not a priority for me.
       </TimeArrow>
-      <TimeSlot image={gamer} alignRight>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem placeat explicabo eaque perspiciatis iusto
-        nostrum atque architecto? Sit voluptatibus, molestias blanditiis debitis veritatis repellat esse ipsum
-        accusantium reiciendis mollitia voluptate?
+      <TimeSlot title="2nd Grade" image={failed} alignRight>
+        The school material begins to get much harder. Multiplication is a big topic in my current grade. My teacher
+        starts giving out weekly multiplication quizzes. I do not perform well on most of them, and I hide the grades
+        from my parents. I completely fail one of the quizzes. My mom finds out!
       </TimeSlot>
       <TimeArrow>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit officiis similique, doloribus fugit aliquid
-        tenetur. Eligendi earum accusantium nobis, ex illo iure ipsum a corporis, perferendis quo similique, possimus
-        quam!
+        My mom begins to demand good grades from my part, and she helps me to achieve those goals. I start to study for
+        quizzes and tests. I begin to see positive grades in return.
       </TimeArrow>
-      <TimeSlot image={gamer}>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo minus ullam cumque corporis qui exercitationem
-        iusto, voluptate eos. Dolor iure obcaecati quis distinctio at quas, fugit quisquam. Consequatur, voluptatibus
-        ab.
+      <TimeSlot title="Middle School" image={textbooks}>
+        By now, I realize that my sole purpose is to be a great student, not only for my parents, but for myself to
+        increase my chances of success in life. I begin to identify as a straight-A honors student. I set myself a goal
+        to achieve all A&apos;s in my first year of middle school to prove this new identity.
+      </TimeSlot>
+      <TimeArrow alignRight>
+        Earning all A&apos;s in my first year of middle school proved to be simple enough. I work my way through the
+        rest of middle school with the goal of achieving all A&apos;s in each and every 9-weeks term.
+      </TimeArrow>
+      <TimeSlot title="High School" image={highschool} alignRight>
+        Now that grades and GPA truly matter, I set the same standards from middle school and give myself the goal of
+        maintaining a 4.0 GPA. I begin to doubt my ability at first, but I decide to stay consistent and continue to put
+        in the hard work. I know it will pay off in the future.
+      </TimeSlot>
+      <TimeArrow>
+        My friends and family realize my honors student indentity. I find it my responsibility to maintain this role,
+        and I continue pushing for my academic goal. I finish high school with a GPA over 4.0.
+      </TimeArrow>
+      <TimeSlot title="College" image={college}>
+        I begin college as a first-generation college student. I jump into UAB with my long-lived honors student
+        identity. I join UAB&apos;s Honors College further pushing this ongoing scholar role. I continue to hold this
+        identity, knowing it will end soon when I graduate.
       </TimeSlot>
     </div>
   );

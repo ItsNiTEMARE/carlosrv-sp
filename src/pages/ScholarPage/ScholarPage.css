@@ -3,7 +3,8 @@
   flex-direction: column;
   width: 100vw;
   min-height: 100vh;
-  background: #12232e;
+  background: var(--main-bg-color-gradient);
+  animation: fadein 1500ms ease forwards;
 }
 
 .ScholarPage-title {
@@ -15,7 +16,7 @@
 
 .ScholarPage-subtitle {
   margin-top: -0.5rem;
-  color: #dddddd;
+  color: var(--main-gold-color);
   font-size: 1.5rem;
   text-align: center;
 }

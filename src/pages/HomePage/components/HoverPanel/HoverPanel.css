@@ -1,0 +1,72 @@
+.HoverPanel {
+  margin: 2rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.HoverPanel-header {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.HoverPanel-button {
+  font-family: Acme, serif;
+  font-size: 1rem;
+  width: 12rem;
+  height: 3rem;
+  color: var(--main-bg-color-dark);
+  background: var(--main-white-color);
+  border-style: solid;
+  border-color: var(--main-bg-color-dark);
+  border-width: 0.2rem;
+  border-radius: 0.75rem;
+  transition: background 750ms, color 750ms, border-width 750ms, transform 750ms;
+}
+
+.HoverPanel-button--active {
+  color: var(--main-white-color);
+  background: var(--main-bg-color-dark);
+  border-width: 0;
+  transform: scale(1.1);
+}
+
+.HoverPanel-body {
+  margin-top: 1rem;
+  padding: 1rem;
+  align-self: center;
+  width: 70%;
+  height: 15rem;
+  background: var(--main-bg-color-gradient);
+  border-radius: 1.5rem;
+  opacity: 0;
+  transition: opacity 750ms;
+}
+
+.HoverPanel-body--active {
+  opacity: 1;
+}
+
+.HoverPanel-description {
+  font-size: 1.25rem;
+  font-family: Poppins, sans-serif;
+  color: var(--main-white-color);
+}
+
+@media only screen and (max-width: 600px) {
+  .HoverPanel-header {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .HoverPanel-button {
+    border-radius: 0.75rem;
+    border-width: 0.2rem;
+    margin: 0.5rem 0 0.5rem 0;
+  }
+
+  .HoverPanel-body {
+    width: 90%;
+  }
+}
