@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Route, Switch, useHistory } from 'react-router-dom';
 import HomePage from 'pages/HomePage';
 import ScholarPage from 'pages/ScholarPage';
+import SWEPage from 'pages/SWEPage';
 
 const App = (): JSX.Element => {
   const [isFirstLoad, setIsFirstLoad] = useState(true);
@@ -20,6 +21,7 @@ const App = (): JSX.Element => {
           <HomePage isFirstLoad={isFirstLoad} />
         </Route>
         <Route path="/scholar" component={ScholarPage} />
+        <Route path="/swe" component={SWEPage} />
       </Switch>
     </main>
   );

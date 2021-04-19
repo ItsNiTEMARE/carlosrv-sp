@@ -35,6 +35,7 @@ const HomePage = ({ isFirstLoad }: Props): JSX.Element => {
         history.push('/scholar');
         break;
       case 'swe':
+        history.push('/swe');
         break;
       case 'gamer':
         break;

@@ -1,0 +1,110 @@
+.LaptopCoder {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+  height: 30rem;
+  margin: 2rem 0;
+}
+
+.LaptopCoder-img {
+  width: 100%;
+  height: 100%;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+.LaptopCoder-screen {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  top: 1.875rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #282a36;
+  width: 69%;
+  height: 66%;
+}
+
+.LaptopCoder-run-button {
+  position: absolute;
+  font-family: Poppins, Courier;
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 0.3rem;
+  top: 0.51rem;
+  right: 0.4rem;
+  width: 5.1rem;
+  height: 2.1rem;
+  background: #5b9c5a;
+  color: var(--main-white-color);
+  cursor: pointer;
+  animation: fadein 750ms ease forwards;
+  transition: transform 500ms, background 50ms;
+}
+
+.LaptopCoder-run-button:hover {
+  transform: scale(1.025);
+}
+
+.LaptopCoder-run-button:active {
+  background: #63AB62;
+  transform: scale(0.9875);
+}
+
+.LaptopCoder-code {
+  width: 100%;
+  height: 80%;
+  font-family: Courier, monospace;
+  font-size: 0.95rem;
+}
+
+.LaptopCoder-content-button {
+  color: var(--main-white-color);
+  background: #008B8B;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 0.95rem;
+  font-family: Poppins, Courier;
+  cursor: pointer;
+  width: 8rem;
+  height: 2.2rem;
+  animation: fadein 500ms ease forwards;
+  transition: transform 500ms, background 50ms;
+}
+
+.LaptopCoder-content-button:hover {
+  transform: scale(1.05);
+}
+
+.LaptopCoder-content-button:active {
+  transform: scale(1.025);
+  background: #008080;
+}
+
+.LaptopCoder-loadview {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadein 750ms ease forwards, fadeout 500ms ease 2000ms forwards;
+}
+
+.LaptopCoder-loadview-img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.LaptopCoder-loadview-text {
+  margin-top: 0.25rem;
+  font-family: Courier, monospace;
+  font-size: 1rem;
+  color: var(--main-white-color);
+}
