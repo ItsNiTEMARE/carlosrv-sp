@@ -9,7 +9,7 @@
 
 .ScholarPage-title {
   margin-top: 10px;
-  color: #ffffff;
+  color: var(--main-white-color);
   font-size: 4.5rem;
   text-align: center;
 }

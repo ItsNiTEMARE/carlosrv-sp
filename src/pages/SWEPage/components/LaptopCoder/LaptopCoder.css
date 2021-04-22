@@ -108,3 +108,14 @@
   font-size: 1rem;
   color: var(--main-white-color);
 }
+
+@media only screen and (max-width: 600px) {
+  .LaptopCoder {
+    width: 40rem;
+    height: 24rem;
+  }
+
+  .LaptopCoder-code {
+    font-size: 0.76rem;
+  }
+}
