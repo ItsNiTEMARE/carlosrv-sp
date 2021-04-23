@@ -39,15 +39,16 @@
 
 .TimeArrow-text {
   color: #ffffff;
-  font-size: 1.1rem;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: Poppins, Courier;
+  font-weight: 500;
+  font-size: 1rem;
   opacity: 0;
   animation: fadein 1250ms ease 500ms forwards;
 }
 
 @media only screen and (max-width: 600px) {
   .TimeArrow {
-    width: 90%;
+    width: 85%;
   }
 }
 

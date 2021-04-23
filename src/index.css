@@ -2,7 +2,8 @@
     --main-bg-color-dark: #001427;
     --main-bg-color-light: #021b32;
     --main-bg-color-gradient: linear-gradient(to right, var(--main-bg-color-dark), var(--main-bg-color-light), var(--main-bg-color-dark));
-    --main-gold-color: #ffd700;
+    --main-bg-color-offset: #26466D;
+    --main-gold-color: #e2c000;
     --main-white-color: #f6f9fc;
 }
 

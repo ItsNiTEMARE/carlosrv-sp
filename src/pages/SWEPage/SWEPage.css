@@ -33,3 +33,21 @@
   height: 100%;
   animation: fadein 1500ms ease forwards;
 }
+
+.SWEPage-introduction {
+  width: 60%;
+  background: var(--main-gold-color);
+  color: var(--main-bg-color-dark);
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 2rem;
+  font-size: 1.15rem;
+  font-family: Poppins, Courier;
+  color: var(--main-bg-color-light);
+}
+
+@media only screen and (max-width: 600px) {
+  .SWEPage-introduction {
+    width: 80%;
+  }
+}

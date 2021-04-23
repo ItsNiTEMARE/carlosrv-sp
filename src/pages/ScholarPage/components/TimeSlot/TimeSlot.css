@@ -6,7 +6,7 @@
   width: 75%;
   padding: 1rem 0 1.5rem 0;
   margin: 2rem 0 2rem 0;
-  background-color: #2e5975;
+  background-color: var(--main-bg-color-offset);
   border-radius: 20px;
   animation: TimeSlot--swoop 1250ms ease;
 }
@@ -23,8 +23,10 @@
 }
 
 .TimeSlot-title {
-  padding-bottom: 0.5rem;
+  font-family: Poppins, Courier;
   font-size: 1.3rem;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
   text-decoration: underline;
   color: #ffffff;
 }
@@ -47,15 +49,16 @@
 }
 
 .TimeSlot-text {
-  color: #ffffff;
-  font-size: 1.25rem;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: var(--main-white-color);
+  font-size: 1.15rem;
+  font-family: Poppins, Courier;
+  font-weight: 500;
   margin: 0 1rem 0 1rem;
 }
 
 @media only screen and (max-width: 600px) {
   .TimeSlot {
-    width: 95%;
+    width: 90%;
     border-radius: 15px;
   }
 }

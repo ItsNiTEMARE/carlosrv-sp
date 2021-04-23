@@ -1,17 +1,19 @@
 .ProjectCard {
   display: flex;
   flex-direction: column;
-  width: 85%;
+  width: 60%;
   height: auto;
   padding: 1rem 0;
+  margin: 2rem 0;
   border-radius: 3rem;
-  background: #15314B;
+  background: var(--main-bg-color-offset);
 }
 
 .ProjectCard-header {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 4rem;
 }
 
 .ProjectCard-title {
@@ -24,40 +26,44 @@
 
 .ProjectCard-body {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   width: 100%;
-  flex: 1;
+  height: 100%;
 }
 
 .ProjectCard-left-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
-  height: 100%;
+  width: 90%;
 }
 
 .ProjectCard-right-section {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  height: 100%;
+  align-items: center;
+  width: 90%;
 }
 
 .ProjectCard-img {
-  height: 20rem;
-  aspect-ratio: calc(4 / 3);
+  margin: 1rem 0;
+  width: 28rem;
+  aspect-ratio: 1;
+  border-radius: 1.5rem;
 }
 
 .ProjectCard-description {
   display: flex;
-  flex: 1;
-  margin: 1rem 1.35rem;
-  color: var(--main-white-color);
-  font-size: 1.5rem;
+  width: 90%;
+  margin: 1rem 0;
+  padding: 0.75rem;
+  font-size: 1.15rem;
   font-family: Poppins, Courier;
   font-weight: 500;
+  border-radius: 1.5rem;
+  color: var(--main-white-color);
+  background: #1f3958;
 }
 
 .ProjectCard-links {
@@ -67,9 +73,14 @@
   justify-content: center;
 }
 
-@media only screen and (max-width: 650px) {
+/* @media only screen and (max-width: 1080px) {
+  .ProjectCard {
+    height: fit-content;
+  }
+
   .ProjectCard-body {
     flex-direction: column;
+    align-items: center;
   }
 
   .ProjectCard-left-section {
@@ -83,10 +94,17 @@
   }
 
   .ProjectCard-img {
-    margin: 1rem 0;
+    max-height: 20rem;
+    width: 90%;
   }
 
   .ProjectCard-description {
     margin: 1rem 0;
+  }
+} */
+
+@media only screen and (max-width: 600px) {
+  .ProjectCard {
+    width: 80%;
   }
 }

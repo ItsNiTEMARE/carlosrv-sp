@@ -4,6 +4,7 @@ import github from 'assets/github.svg';
 import youtube from 'assets/youtube.svg';
 import apple from 'assets/apple.svg';
 import playstore from 'assets/playstore.svg';
+import link from 'assets/link.svg';
 import './LinkButton.css';
 
 type LinkButtonType = {
@@ -11,6 +12,7 @@ type LinkButtonType = {
   YouTube: 'YouTube';
   Apple: 'Apple';
   PlayStore: 'PlayStore';
+  Link: 'Link';
 };
 
 type Props = {
@@ -40,6 +42,10 @@ const LinkButton = ({ type, url }: Props): JSX.Element => {
         setTitle('View on Play Store');
         setLogo(playstore);
         break;
+      case 'Link':
+        setTitle('View Website');
+        setLogo(link);
+        break;
       default:
         break;
     }
@@ -56,6 +62,7 @@ const LinkButton = ({ type, url }: Props): JSX.Element => {
         'LinkButton--youtube': type === 'YouTube',
         'LinkButton--apple': type === 'Apple',
         'LinkButton--playstore': type === 'PlayStore',
+        'LinkButton--link': type === 'Link',
       })}
       type="button"
       onClick={onClick}
