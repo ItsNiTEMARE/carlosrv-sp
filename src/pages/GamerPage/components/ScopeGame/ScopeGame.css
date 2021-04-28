@@ -1,0 +1,34 @@
+.ScopeGame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.ScopeGame-gameview {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.ScopeGame-count {
+  width: 22rem;
+  margin: 1rem 0;
+  text-align: center;
+  font-family: Acme, Courier;
+  font-size: 2rem;
+  color: var(--main-white-color);
+}
+
+.ScopeGame-time {
+  width: 22rem;
+  margin: 1rem 0;
+  text-align: center;
+  font-family: Acme, Courier;
+  font-size: 2rem;
+  color: var(--main-white-color);
+}

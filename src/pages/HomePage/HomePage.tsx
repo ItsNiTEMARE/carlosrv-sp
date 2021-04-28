@@ -38,6 +38,7 @@ const HomePage = ({ isFirstLoad }: Props): JSX.Element => {
         history.push('/swe');
         break;
       case 'gamer':
+        history.push('/gamer');
         break;
       default:
         break;
