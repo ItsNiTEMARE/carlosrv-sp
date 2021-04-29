@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import ExitButton from 'components/ExitButton';
+import HintBox from 'components/HintBox';
 import dndragons from 'assets/dndragons.gif';
 import gameengine from 'assets/gameengine.gif';
 import jumpyjoe from 'assets/jumpyjoe.gif';
@@ -29,7 +30,17 @@ const SWEPage = (): JSX.Element => {
       <ExitButton onClick={exitPage} />
       <h1 className="SWEPage-title">Rising</h1>
       <h1 className="SWEPage-subtitle">Software Engineer</h1>
-      {!isShowingContent && <LaptopCoder onComplete={showContent} />}
+      {!isShowingContent && (
+        <div className="SWEPage-pregame">
+          <LaptopCoder onComplete={showContent} />
+          <HintBox>
+            <ol>
+              <li>Click &quot;Run Code&quot;</li>
+              <li>Click &quot;View Content&quot;</li>
+            </ol>
+          </HintBox>
+        </div>
+      )}
       {isShowingContent && (
         <div className="SWEPage-content">
           <h1 className="SWEPage-introduction">

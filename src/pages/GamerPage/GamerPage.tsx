@@ -10,7 +10,7 @@ import YouTubeBanner from './components/YouTubeBanner';
 import './GamerPage.css';
 
 const GamerPage = (): JSX.Element => {
-  const [isShowingContent, setIsShowingContent] = useState(true);
+  const [isShowingContent, setIsShowingContent] = useState(false);
   const history = useHistory();
 
   const exitPage = () => {

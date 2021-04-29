@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import HintBox from 'components/HintBox';
 import Bullseye from '../Bullseye';
 import './ScopeGame.css';
 
@@ -56,6 +57,13 @@ const ScopeGame = ({ onComplete }: Props): JSX.Element => {
       )}
       {!isComplete && <h1 className="ScopeGame-count">Targets Remaining: {bullseyes.length}</h1>}
       <h1 className="ScopeGame-time">Time: {time.toFixed(1)}</h1>
+      {!isComplete && (
+        <HintBox>
+          <ol>
+            <li>Click all Targets</li>
+          </ol>
+        </HintBox>
+      )}
     </div>
   );
 };

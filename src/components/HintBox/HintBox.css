@@ -1,0 +1,34 @@
+.HintBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20rem;
+  height: auto;
+  min-height: 10rem;
+  opacity: 0.75;
+}
+
+.HintBox-button {
+  width: 8rem;
+  height: 2.5rem;
+  background: var(--main-white-color);
+  color: var(--main-bg-color-light);
+  font-family: Acme, Courier;
+  font-size: 1.25rem;
+  border-width: 0;
+  border-style: solid;
+  border-radius: 0.5rem;
+}
+
+.HintBox-hint {
+  width: 90%;
+  font-family: Poppins, Courier;
+  font-size: 1rem;
+  font-weight: 500;
+  background: var(--main-white-color);
+  color: var(--main-bg-color-light);
+  margin-top: -0.2rem;
+  padding: 5% 10%;
+  border-radius: 1rem;
+  animation: fadein 1000ms ease forwards;
+}
