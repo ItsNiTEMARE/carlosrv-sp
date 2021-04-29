@@ -63,7 +63,7 @@
   font-weight: 500;
   border-radius: 1.5rem;
   color: var(--main-white-color);
-  background: #1f3958;
+  background: var(--main-bg-color-offset-2);
 }
 
 .ProjectCard-links {
@@ -72,36 +72,6 @@
   flex: 1;
   justify-content: center;
 }
-
-/* @media only screen and (max-width: 1080px) {
-  .ProjectCard {
-    height: fit-content;
-  }
-
-  .ProjectCard-body {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .ProjectCard-left-section {
-    width: 90%;
-    height: auto;
-  }
-
-  .ProjectCard-right-section {
-    width: 90%;
-    height: auto;
-  }
-
-  .ProjectCard-img {
-    max-height: 20rem;
-    width: 90%;
-  }
-
-  .ProjectCard-description {
-    margin: 1rem 0;
-  }
-} */
 
 @media only screen and (max-width: 600px) {
   .ProjectCard {

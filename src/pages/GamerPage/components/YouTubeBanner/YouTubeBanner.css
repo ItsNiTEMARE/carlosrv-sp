@@ -1,0 +1,87 @@
+.YouTubeBanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  width: 65%;
+  height: auto;
+  margin: 2rem 0;
+  border-radius: 1.5rem;
+}
+
+.YouTubeBanner-left-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  flex: 1;
+}
+
+.YouTubeBanner-right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  flex: 1;
+}
+
+.YouTubeBanner-logo {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+.YouTubeBanner-title {
+  font-family: Poppins, Courier;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--main-white-color);
+  transition: color 500ms, transform 500ms;
+}
+
+.YouTubeBanner-title:hover {
+  transform: scale(1.025);
+  color: #eeeeee;
+}
+
+.YouTubeBanner-description {
+  width: 90%;
+  font-family: Poppins, Courier;
+  font-size: 1.15rem;
+  color: var(--main-white-color);
+}
+
+.YouTubeBanner-button {
+  width: 10rem;
+  height: 2.5rem;
+  margin: 1rem 0;
+  font-family: Acme, Courier;
+  font-size: 1.25rem;
+  border-style: solid;
+  border-width: 0;
+  border-radius: 0.5em;
+  background: var(--main-white-color);
+  cursor: pointer;
+  transition: transform 500ms;
+}
+
+.YouTubeBanner-button:hover {
+  transform: scale(1.05);
+}
+
+@media only screen and (max-width: 600px) {
+  .YouTubeBanner {
+    width: 85%;
+    flex-direction: column;
+  }
+
+  .YouTubeBanner-left-section {
+    width: 100%;
+  }
+  
+  .YouTubeBanner-right-section {
+    width: 100%;
+  }
+}

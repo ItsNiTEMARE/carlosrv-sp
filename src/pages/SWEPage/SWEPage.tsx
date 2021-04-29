@@ -33,10 +33,10 @@ const SWEPage = (): JSX.Element => {
       {isShowingContent && (
         <div className="SWEPage-content">
           <h1 className="SWEPage-introduction">
-            Throughout my ongoing journey of becoming a great software engineer, I have learned about many programming
-            languages, frameworks, and technologies. A large part of diving into this field is building side-projects to
-            develop, grow, and showcase your skills. Below are all of my software engineering side-projects I&apos;ve
-            worked on over the years. Each project displays a step of progress in this ongoing journey.
+            Throughout my journey of becoming a great software engineer, I have learned about many programming
+            languages, frameworks, and technologies. A large part of diving into this field is building side projects to
+            develop, grow, and showcase one&apos;s skills. Below are all of my software engineering side projects. Each
+            project displays a step of progress in this ongoing journey.
           </h1>
           <ProjectCard
             title="DNDragons"
@@ -91,7 +91,10 @@ const SWEPage = (): JSX.Element => {
           <ProjectCard
             title="The Algorithm Viewer"
             image={thealgoview}
-            links={[<LinkButton type="Link" url="http://thealgoview.com/index.html" />]}
+            links={[
+              <LinkButton type="Link" url="http://thealgoview.com/index.html" />,
+              <LinkButton type="GitHub" url="https://github.com/RivasCVA/TheAlgoView" />,
+            ]}
           >
             A Coding Algorithm Visualizer. This was my first attempt at building a web app from scratch using the
             elemetary languages of HTML, CSS, and JavaScript. At the same time, I strengthened my knowledge in
