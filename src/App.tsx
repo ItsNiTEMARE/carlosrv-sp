@@ -21,9 +21,9 @@ const App = (): JSX.Element => {
         <Route exact path="/carlosrv-sp">
           <HomePage isFirstLoad={isFirstLoad} />
         </Route>
-        <Route path="/scholar" component={ScholarPage} />
-        <Route path="/swe" component={SWEPage} />
-        <Route path="/gamer" component={GamerPage} />
+        <Route path="/carlosrv-sp/scholar" component={ScholarPage} />
+        <Route path="/carlosrv-sp/swe" component={SWEPage} />
+        <Route path="/carlosrv-sp/gamer" component={GamerPage} />
       </Switch>
     </main>
   );

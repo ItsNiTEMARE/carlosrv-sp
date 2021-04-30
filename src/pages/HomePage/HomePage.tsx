@@ -32,13 +32,13 @@ const HomePage = ({ isFirstLoad }: Props): JSX.Element => {
   const handleOnClick = (type: IdentityType) => {
     switch (type) {
       case 'scholar':
-        history.push('/scholar');
+        history.push('/carlosrv-sp/scholar');
         break;
       case 'swe':
-        history.push('/swe');
+        history.push('/carlosrv-sp/swe');
         break;
       case 'gamer':
-        history.push('/gamer');
+        history.push('/carlosrv-sp/gamer');
         break;
       default:
         break;
