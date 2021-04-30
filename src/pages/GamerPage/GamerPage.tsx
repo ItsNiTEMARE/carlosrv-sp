@@ -37,10 +37,10 @@ const GamerPage = (): JSX.Element => {
             allowFullScreen
           />
           <h1 className="GamerPage-introduction">
-            The <i>Call of Duty: Black Ops 2 Live-Action Trailer </i> (shown above) is the pivotal moment I begin my
-            entrance into the gaming community. After purchasing this game, I discovered the undercover world of online
-            gaming. Since then, I have made a multitude of real-life and online friends who have the same passion. The
-            idea of being a gamer is a huge part of me as of now.
+            The <i>Call of Duty: Black Ops 2 Live-Action Trailer</i> (shown above) is the pivotal moment I entered into
+            the gaming community. After purchasing the game, I discovered the undercover world of online gaming. Since
+            then, I have made a multitude of real-life and online friends from around the nation. My gamer identity is
+            one I do not see changing anytime soon.
           </h1>
           <YouTubeBanner
             logo={itsnitemare}
@@ -48,18 +48,20 @@ const GamerPage = (): JSX.Element => {
             url="https://www.youtube.com/itsnitemareyt"
             color="#c4302b"
           >
-            My gaming YouTube channel. I begin this channel in middle school with hopes of building a presence in the
-            Call of Duty community. In this channel, I shared my best gaming clips and tutorials on topics related to
-            Call of Duty. Years ago, I stopped posting videos on the channel and it is just a peice of history now.
+            Gaming YouTube Channel. I began this channel in 2015 with the hope of building a presence in the&nbsp;
+            <i>Call of Duty</i> community. In this channel, I shared my best gaming clips and tutorials on topics
+            related to <i>Call of Duty</i>. Years ago, I stopped posting videos on the channel and it is just a piece of
+            history now.
           </YouTubeBanner>
           <h1 className="GamerPage-textbox">
-            The rise of{' '}
+            The rise of&nbsp;
             <a href="https://en.wikipedia.org/wiki/Esports" target="_blank" rel="noreferrer">
               Esports
             </a>
-            &nbsp;is what keeps me in this community. It is amazing to watch the best players and teams from around the
-            world compete in games for large amounts of money (like traditional sports). The best gaming moments so far
-            have been made during Esports competitions, and I want to continue being part of this growing community.
+            &nbsp;is what keeps me in this gaming community. It is amazing to watch the best players and teams from
+            around the world compete in games for large amounts of money - like traditional sports. The best gaming
+            moments have been made during Esports competitions, and I want to continue being a part of this growing
+            community.
           </h1>
           <div className="GamerPage-panel">
             <iframe

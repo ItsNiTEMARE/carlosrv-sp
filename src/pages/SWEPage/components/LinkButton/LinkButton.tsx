@@ -13,6 +13,7 @@ type LinkButtonType = {
   Apple: 'Apple';
   PlayStore: 'PlayStore';
   Link: 'Link';
+  Company: 'Company';
 };
 
 type Props = {
@@ -46,6 +47,10 @@ const LinkButton = ({ type, url }: Props): JSX.Element => {
         setTitle('View Website');
         setLogo(link);
         break;
+      case 'Company':
+        setTitle('View Company');
+        setLogo(link);
+        break;
       default:
         break;
     }
@@ -63,6 +68,7 @@ const LinkButton = ({ type, url }: Props): JSX.Element => {
         'LinkButton--apple': type === 'Apple',
         'LinkButton--playstore': type === 'PlayStore',
         'LinkButton--link': type === 'Link',
+        'LinkButton--company': type === 'Company',
       })}
       type="button"
       onClick={onClick}

@@ -8,6 +8,7 @@ import jumpyjoe from 'assets/jumpyjoe.gif';
 import shapefall from 'assets/shapefall.gif';
 import thealgoview from 'assets/thealgoview.gif';
 import dreamtrade from 'assets/dreamtrade.gif';
+import khanacademy from 'assets/khanacademy.jpg';
 import LaptopCoder from './components/LaptopCoder';
 import ProjectCard from './components/ProjectCard';
 import LinkButton from './components/LinkButton';
@@ -122,6 +123,20 @@ const SWEPage = (): JSX.Element => {
             A Stock Market Simulator iOS App. This was my first large project intended to earn revenue. I built an
             intuitive user interface and implemented features that outperformed similar apps. I learned to integrate
             advertisement into the project to earn money from the app.
+          </ProjectCard>
+          <h1 className="SWEPage-trantitle">The next step.</h1>
+          <h1 className="SWEPage-introduction" style={{ textAlign: 'center' }}>
+            Internships are a big step for growing as a software engineer.
+          </h1>
+          <ProjectCard
+            title="Internship - Khan Academy"
+            image={khanacademy}
+            links={[<LinkButton type="Company" url="https://www.khanacademy.org" />]}
+          >
+            I am joining the Khan Academy team as a 2021 Software Engineer Intern. I will help grow the online
+            educational platform to deliver world-class tools to students from around the world. At the same time, I
+            will be able to grow my skills as a rising software engineer. I will meet experienced software engineers to
+            connect and learn from them.
           </ProjectCard>
         </div>
       )}

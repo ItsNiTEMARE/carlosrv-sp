@@ -32,6 +32,10 @@
   background: #00688B;
 }
 
+.LinkButton--company {
+  background: #00688B;
+}
+
 .LinkButton:hover {
   transform: scale(1.05);
 }
