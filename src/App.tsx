@@ -18,12 +18,12 @@ const App = (): JSX.Element => {
   return (
     <main>
       <Switch>
-        <Route exact path="/carlosrv-sp">
+        <Route exact path="/">
           <HomePage isFirstLoad={isFirstLoad} />
         </Route>
-        <Route path="/carlosrv-sp/scholar" component={ScholarPage} />
-        <Route path="/carlosrv-sp/swe" component={SWEPage} />
-        <Route path="/carlosrv-sp/gamer" component={GamerPage} />
+        <Route path="/scholar" component={ScholarPage} />
+        <Route path="/swe" component={SWEPage} />
+        <Route path="/gamer" component={GamerPage} />
       </Switch>
     </main>
   );
