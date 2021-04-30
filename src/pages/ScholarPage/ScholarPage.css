@@ -7,6 +7,12 @@
   animation: fadein 1500ms ease forwards;
 }
 
+.ScholarPage-pregame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .ScholarPage-title {
   margin-top: 10px;
   color: var(--main-white-color);
@@ -19,4 +25,12 @@
   color: var(--main-gold-color);
   font-size: 1.5rem;
   text-align: center;
+}
+
+.ScholarPage-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  animation: fadein 1500ms ease forwards;
 }

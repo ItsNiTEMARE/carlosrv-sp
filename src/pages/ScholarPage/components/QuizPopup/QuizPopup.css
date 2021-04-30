@@ -1,0 +1,120 @@
+.QuizPopup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30rem;
+  min-height: 32rem;
+  margin: 2rem 0;
+  align-self: center;
+  border-radius: 2rem;
+  background: #e7e7e7;
+}
+
+.QuizPopup--fadeout {
+  animation: fadeout 500ms ease 250ms forwards;
+}
+
+.QuizPopup-title {
+  color: var(--main-bg-color-light);
+  font-family: Acme, Georgia;
+  font-size: 2.25rem;
+  margin-top: 1rem;
+}
+
+.QuizPopup-question {
+  color: var(--main-bg-color-light);
+  font-family: Poppins, Georgia;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin: 1rem 0;
+  width: 85%;
+}
+
+.QuizPopup-banner {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: 0.75rem 0;
+  cursor: pointer;
+}
+
+.QuizPopup-circle {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  margin: 0 0.5rem;
+  background: #b3b3b3;
+}
+
+.QuizPopup-circle--selected {
+  background: green;
+}
+
+.QuizPopup-answer {
+  color: var(--main-bg-color-light);
+  font-family: Poppins, Georgia;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.QuizPopup-submit {
+  background: var(--main-bg-color-light);
+  color: var(--main-white-color);
+  font-family: Poppins, Courier;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-width: 0;
+  border-style: solid;
+  border-radius: 1.5rem;
+  width: 10rem;
+  height: 2.5rem;
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: transform 500ms, opacity 500ms;
+}
+
+.QuizPopup-submit:hover {
+  transform: scale(1.05);
+}
+
+.QuizPopup-submit:active{
+  transform: scale(0.995);
+}
+
+.QuizPopup-submit--disabled {
+  opacity: 0.75;
+  pointer-events: none;
+}
+
+.QuizPopup-tracker {
+  font-family: Poppins, Courier;
+  font-size: 1.2rem;
+}
+
+.QuizPopup-wrong {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-white-color);
+  width: 8rem;
+  height: 2.5rem;
+  margin: 1rem 0;
+  border-radius: 2rem;
+  border-width: 0.25rem;
+  border-style: solid;
+  border-color: red;
+  opacity: 0;
+  transition: opacity 250ms;
+}
+
+.QuizPopup-wrong-text {
+  font-family: Poppins, Courier;
+  font-size: 1.2rem;
+  text-align: center;
+  color: red;
+}
+
+.QuizPopup-wrong--enabled {
+  opacity: 1;
+  animation: shake 250ms 2 ease 100ms forwards;
+}
