@@ -1,0 +1,2 @@
+(this["webpackJsonpcarlosrv-sp"]=this["webpackJsonpcarlosrv-sp"]||[]).push([[106],{222:function(s,t,n){"use strict";function r(s){s.languages.properties={comment:/^[ \t]*[#!].*$/m,"attr-value":{pattern:/(^[ \t]*(?:\\(?:\r\n|[\s\S])|[^\\\s:=])+?(?: *[=:] *| ))(?:\\(?:\r\n|[\s\S])|[^\\\r\n])+/m,lookbehind:!0},"attr-name":/^[ \t]*(?:\\(?:\r\n|[\s\S])|[^\\\s:=])+?(?= *[=:] *| )/m,punctuation:/[=:]/}}s.exports=r,r.displayName="properties",r.aliases=[]}}]);
+//# sourceMappingURL=react-syntax-highlighter_languages_refractor_properties.69d88baf.chunk.js.map
