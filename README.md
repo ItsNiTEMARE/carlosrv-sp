@@ -1,8 +1,13 @@
 # Carlos Rivas - CMST-101 Honors Project
 #### A project for my public speaking course at UAB.
 
+# Link to Site
+Click [here](http://itsnitemare.github.io/carlosrv-sp) to view the site.
+
+http://itsnitemare.github.io/carlosrv-sp
+
 # Purpose
-This web app is intended to reflect my current most valued social identities. In the course, we learned that we each have certain social identities that we feel proud of. I want to display my current social identities in this web app so that in the future I can look back and see what my social identities were in the year 2021.
+In the course, we learned that all of us have certain social identities that we feel proud of. This web app is intended to reflect my current most valued social identities (as of early 2021).
 
 # Time Capsule
-This app is intended to be a time capsule so I can re-discover my past social identities. Since I consider my social identities to be dynamic, I am certain in the next few years my most valued social identities will be different than what they are now. I will be able to look back and see what they were today with this app.
+This web app is intended to be a time capsule holding my most valued social identities as of early 2021. I consider my social identities to be dynamic, so I expect them to change in the distant future. This app will allow me to re-discover my past social identities in a future time when I don't recall what I valued the most when I was younger. 
